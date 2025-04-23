@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="testng">
+    <test name="test1">
+        <classes>
+            <class name="org.renpeng.testng.groups.students"/>
+            <class name="org.renpeng.testng.groups.teachers"/>
+        </classes>
+    </test>
+    <test name="test2">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.renpeng.testng.groups.students"/>
+            <class name="org.renpeng.testng.groups.teachers"/>
+        </classes>
+    </test>
+</suite>
